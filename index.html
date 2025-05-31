@@ -39,7 +39,7 @@ ystem: loading" id="loading">Checking...</p>
             loading.style.display = "block";
 
             try {
-                const response = await fetch("YOUR_HUGGING_FACE_API_URL", {
+                const response = await fetch("https://n1-huggingface-ai-prompt-validator.hf.space/check_prompt", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ prompt })
